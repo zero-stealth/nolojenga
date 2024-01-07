@@ -37,16 +37,27 @@ export default function TemplateEmail() {
         <div className={styles.emailInfo}>
           <h1>Dear Client</h1>
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default
-            model text, and a search for 'lorem ipsum' will uncover many web
-            sites still in their infancy. Various versions have evolved over the
-            years, sometimes by accident, sometimes on purpose (injected humour
-            and the like).
+            I hope this email finds you well. On behalf of the entire NoloJenga
+            team, I am thrilled to extend a warm welcome to you! We are
+            delighted to have you on board as our valued client, and we are
+            eager to embark on this journey together. At NoloJenga, our mission
+            is to provide innovative and comprehensive legal solutions tailored
+            to meet your unique needs. We understand that navigating the legal
+            landscape can be complex, and we are committed to simplifying the
+            process for you. Whether you are seeking expert advice, drafting
+            legal documents, or resolving disputes, our team is dedicated to
+            delivering exceptional service and ensuring your peace of mind. As
+            you settle in, please feel free to explore our user-friendly
+            platform, where you can access a wide range of legal resources and
+            tools designed to empower you. Additionally, our team of experienced
+            legal professionals is here to assist you every step of the way. If
+            you have any questions or require assistance, do not hesitate to
+            reach out to our customer support team at [support@email.com]. We
+            look forward to building a strong and successful partnership with
+            you. Your satisfaction is our top priority, and we are committed to
+            exceeding your expectations. Once again, welcome to NoloJenga! We
+            are excited to have you on board, and we are confident that together
+            we can achieve great things.
           </p>
         </div>
       </div>

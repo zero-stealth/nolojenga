@@ -7,8 +7,7 @@ import { useState, useRef, useEffect } from "react";
 import styles from "@/app/style/addRental.module.css";
 import {
   CameraIcon,
-  HomeModernIcon as ApartMentIcon,
-  MapPinIcon as LocationIcon,
+  MapIcon as LandIcon,
 } from "@heroicons/react/24/outline";
 
 const FileInput = ({ onChange, idImage }) => {
