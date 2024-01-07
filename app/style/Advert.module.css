@@ -1,0 +1,61 @@
+@media screen {
+  .advertComponent {
+    object-position: center;
+    border-radius: 20px;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .adinfo {
+    height: 70%;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+  }
+
+  .adinfo h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--background-color);
+  }
+
+  .imageSlider {
+    gap: 5px;
+    padding: 10px;
+    display: flex;
+    height: inherit;
+    align-items: end;
+    justify-content: start;
+    border-radius: inherit;
+  }
+
+  .circleAdv {
+    width: 10px;
+    height: 10px;
+    border-radius: 360%;
+    border: 2px solid var(--background-color);
+  }
+
+  .activeCircle {
+    width: 20px;
+    height: 10px;
+    border-radius: 12px;
+    background-color: var(--background-color);
+  }
+
+  .advertImage {
+    z-index: -1;
+    border-radius: inherit;
+    filter: brightness(80%);
+  }
+}
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .imageSlider {
+    justify-content: center;
+  }
+}

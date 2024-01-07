@@ -1,0 +1,116 @@
+@media screen {
+
+  .roomContainer {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    z-index: -999;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    flex-direction: column;
+  }
+
+  .roomInnerContainer{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .roomWrapper {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .addRoom {
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 12px;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+  }
+
+  .AddProperty {
+    border-radius: 8px;
+    padding: 10px 40px;
+    cursor: pointer;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+
+  .roomSearch {
+    gap: 10px;
+    display: flex;
+    padding:0 10px;
+    font-size: .8rem;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: var( --background-color);
+    border: 1px solid var(--light-background-color);
+
+  }
+
+  .roomSearchIcon{
+    color: var(--light-background-color);
+  }
+
+
+  .roomSearchInput::placeholder {
+    color: var(--light-background-color);
+
+  }
+
+  .roomSearchInput{
+    border: none;
+    width: 100%;
+    padding: 8px 0;
+    outline: none;
+    border-radius: 30px;
+    color: var(--light-background-color);
+
+  }
+
+  .roomContent {
+    gap: 14px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+ 
+
+}
+
+@media only screen and (min-width: 48em) {
+
+  .roomContainer {
+    z-index:0;
+    height: auto;
+    padding-bottom: 0;
+    position: relative;
+    border-radius: 12px; 
+  }
+
+  .roomSearchInput{
+    width: 300px;
+  }
+
+  .roomContent {
+    gap: 10px;
+    padding: 10px 0;
+}
+
+
+}

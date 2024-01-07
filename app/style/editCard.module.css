@@ -1,0 +1,184 @@
+@media screen {
+  .CardComponent {
+    gap: 10px;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    cursor: pointer;
+    height: fit-content;  
+    border-radius: 20px;
+    flex-direction: column;
+    box-shadow: var(--card-shadow-line);
+    background-color: var(--background-color);
+  }
+
+  .CardComponent:hover {
+    box-shadow: var(--bar-shadow);
+  }
+
+  .CardTitleComponent h1 {
+    font-size: 1rem;
+  }
+
+  .CardBannerImage {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: inherit;
+    flex-direction: column;
+  }
+
+  .CardSpan {
+    gap:10px;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    display: flex;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: absolute;
+    width: fit-content;
+    border-radius: 8px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-color);
+  }
+
+  .deleteIcon{
+    color: var(--tertiary-color);
+  }
+
+  .editIcon{
+    color: var(--secondary-color);
+  }
+
+  .CardImageC {
+    width: 100%;
+    height: 130px;
+    border-radius: inherit;
+  }
+
+  .CBannerImage {
+    object-fit: cover;
+    border-radius: inherit;
+    object-position: center;
+    
+  }
+
+  .CardProfile {
+    gap: 10px;
+    right: 24px;
+    bottom: -14px;
+    display: flex;
+    font-size: 0.6rem;
+    padding: 5px 6px;
+    width: fit-content;
+    position: absolute;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: var(--bar-shadow);
+    justify-content: space-between;
+    background-color: var(--background-color);
+  }
+
+  .CardProfileImage {
+    object-fit: cover;
+    border-radius: 360%;
+    object-position: center;
+  }
+
+  .CardTextComponent {
+    gap: 10px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .CardLocationComponent {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .TextComponent {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    align-items: top;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  .TextComponent span {
+    font-weight: 300;
+    font-size: .7rem;
+  }
+
+  .TextComponent h3 {
+    font-size: .8rem;
+  }
+
+  .popDeleteContainer {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .popDeleteContainer h1 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .popDeleteWrapper{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btnDelete , .btnCancel {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: center;
+    color: var(--background-color);
+
+  }
+
+  .btnDelete {
+    background-color: var(--tertiary-color);
+  }
+
+  .btnCancel  {
+    background-color: var(--secondary-color);
+  }
+
+  }
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .CardComponent {
+    max-width: 300px;
+  }
+
+  
+  .CardImageC {
+    width: 100%;
+    height: 110px;
+    border-radius: inherit;
+  }
+
+  .CardTextComponent {
+    gap: 4px;
+
+  }
+
+
+}

@@ -1,0 +1,36 @@
+@media screen {
+ 
+    .sucessComponent {
+        width: 100%;
+        padding: 10px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--dark-background-color);
+    }
+
+    .checkComponent {
+        gap: 10px;
+        display: flex;
+        padding: 10px;
+        font-size: .8rem;
+        text-align: center;
+        border-radius: 12px;
+        align-items: center;
+        flex-direction: column;
+        border:1px solid var(--dark-background-color);
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    .sucessComponent {
+        padding: 0;
+    }
+
+    .checkComponent {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+}

@@ -1,0 +1,157 @@
+@media screen {
+  .infoCardComponent {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+  }
+
+  .infoCardImageComponent {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  .infoCardBannerImage {
+    object-position: center;
+    border-radius: 20px;
+    position: relative;
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+  }
+
+  .infoCardSpan {
+    top: 14px;
+    left: 14px;
+    z-index: 100;
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 6px 10px;
+    position: absolute;
+    width: fit-content;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+  }
+
+  .moreInfoHeight {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoCardTextComponent {
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .infoCardTitleComponent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .infoCardTitleComponent h1 {
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+
+  .infoCardAreaWrapper {
+    gap: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .infoCardV {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+  .areaCardInfo {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .areaCardInfo span {
+    font-size: 0.6rem;
+  }
+
+  .moreInfoCardArea {
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .moreInfoCardArea h1 {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .moreInfoCardArea p {
+    text-align: justify;
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  
+  .btnFilter {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: .8rem;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    height: 30px;
+    width: 100%;
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .infoCardComponent {
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .infoCardBannerImage {
+    height: 100%;
+    width: 320px;
+
+  }
+
+  .moreInfoHeight {
+    gap: 0;
+    display: flex;
+    max-height: 140px;
+    overflow: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+  }
+
+  .infoCardTextComponent {
+    gap: 15px;
+  }
+
+  .moreInfoHeight::-webkit-scrollbar {
+    display: none;
+  }
+}

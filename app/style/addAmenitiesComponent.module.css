@@ -1,0 +1,306 @@
+@media screen {
+  .AddAmenitiesComponent {
+    gap: 12px;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: var(--light-shade-color);
+    border: 1px solid var(--light-background-color);
+  }
+
+  .AddAmenitiesContentCont{
+    gap: 10px;
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  .AddAmenitiesContent {
+    border-radius: 12px;
+    background-color: var(--background-color);
+    border: 1px solid var(--light-background-color);
+  }
+
+ 
+  .amenityItem {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-background-color);
+  }
+
+  .amenityItem span:last-child {
+    border-radius: 12px;
+
+  }
+
+
+  .amenityItem span {
+    width: 100%;
+    font-size: .8rem;
+    text-transform: capitalize;
+  }
+
+  .AddAmenitiesBtn {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: var(--light-background-color);
+  }
+
+  .formContainer {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formContainerInner {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .ContainSide {
+    gap: 20px;
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContainSideTwo {
+    gap: 15px;
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formHeader h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .formInputContainer {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filterInputTextArea {
+    height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--light-background-color);
+    border: 1px solid var(--light-background-color);
+  }
+
+  .formInput {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    align-items: center;
+    border: 1px solid var(--light-background-color);
+  }
+
+  .formInput:hover {
+    border: 1px solid var(--secondary-color);
+  }
+
+  .filterInputTextArea::placeholder {
+    color: var(--light-background-color);
+  }
+
+  .formLabel {
+    font-size: 0.7rem;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+
+  .formInput input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 0.7rem;
+    border-radius: inherit;
+    background-color: transparent;
+  }
+
+  .formInput input:-webkit-autofill,
+  .formInput input:-webkit-autofill:hover,
+  .formInput input:-webkit-autofill:focus,
+  .formInput input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--primary-color) !important;
+  }
+
+  .formInput input:focus {
+    background-color: transparent;
+  }
+
+  .formInput input::placeholder {
+    font-weight: 100;
+    color: var(--light-background-color);
+  }
+
+  .formButton {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+
+  .ContainSideInner {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .SideInner {
+    gap: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formChangeUpload {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formChangeLocation {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formAccount h1 {
+    font-size: 1rem;
+    color: var(--light-background-color);
+  }
+
+  .AdsSection {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    object-position: center;
+  }
+
+  .uploadCameraIcon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted var(--light-background-color);
+  }
+
+  .uploadLocationIcon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    border-radius: 12px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px dotted var(--light-background-color);
+  }
+
+  .formInputIcon {
+    color: var(--light-background-color);
+  }
+  .CameraIcon {
+    color: var(--light-background-color);
+  }
+
+  .IdImage {
+    border-radius: 12px;
+  }
+
+  .ContainSideInner {
+    width: 100%;
+  }
+
+  .ContainSideTwo h2 {
+    font-weight: 300;
+    font-size: 0.7rem;
+  }
+
+  .mapRental {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 12px;
+    object-position: center;
+    border: 1px solid var(--light-shade-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .formContainer {
+    height: fit-content;
+  }
+
+  .AddAmenitiesComponent {
+    height: fit-content;
+
+   }
+
+  .AddAmenitiesContent {
+    overflow: hidden;
+    overflow-y: auto;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 12px;
+  }
+
+  .amenityItem {
+    border-radius: 0;
+  }
+
+  .AddAmenitiesContentCont{
+    height: auto;
+    justify-content: center;
+  }
+
+
+  .formContainerInner {
+    flex-direction: row;
+  }
+
+  .filterInputTextArea {
+    height: 300px;
+  }
+
+  .mapRental {
+    height: 140px;
+  }
+}

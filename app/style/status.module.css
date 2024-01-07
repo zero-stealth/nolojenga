@@ -1,0 +1,23 @@
+@media screen {
+.statusComponent {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.statusInfo {
+    font-size: .8rem;
+    color: var(--secondary-color);
+}
+
+.failed {
+    color: var(--tertiary-color);
+}
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+
+}

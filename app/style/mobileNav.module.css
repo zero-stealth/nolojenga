@@ -1,0 +1,122 @@
+@media screen {
+  .mobileContainer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding:5px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+    justify-content: space-evenly;
+    box-shadow: var(--nav-shadow);
+    height: var(--mobile-nav-height);
+    background-color: var(--background-color);
+  }
+
+  .mobileContainer span {
+    display:none;
+  }
+
+  .mobileLinkWrapper {
+    width:20%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mobileLinkWrapper,   .mobileMenuWrapper  span {
+    font-size: 0.5rem;
+  }
+
+  .mobileLink {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mobileIcon{
+    color: var(--primary-color);
+  }
+
+  .linkName{
+    color: var(--secondary-color);
+  }
+
+  .mobileMenuWrapper {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    bottom: 25px;
+    gap:5px;
+  }
+
+  .mobileMenu {
+    height: 80px;
+    width: 80px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+  }
+  
+  .innerMobile {
+    background-color: var(--primary-color);
+    justify-content: center;
+    border-radius: inherit;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  .linkActive {
+    background-color: var(--secondary-color)
+  }
+
+  .linkActive .activeMenu {
+    color: var(--secondary-color);
+  }
+
+
+
+ .linkName span {
+    display: flex;
+    color: var(--secondary-color);
+ }
+
+
+  .menuIcon {
+    transform: rotate(45deg);
+    color: var(--background-color);
+
+  }
+
+  .mobileProfileImage {
+    object-fit: cover;
+    border-radius: 360%;
+    object-position: center;
+  
+  }
+
+  .activeMobileProfileImage{
+    border:2px solid  var(--secondary-color);
+  }
+
+
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .mobileContainer {
+    display: none;
+  }
+}

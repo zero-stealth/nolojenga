@@ -1,0 +1,318 @@
+@media screen {
+  .filterContainer {
+    left: 0;
+    gap: 14px;
+    height: 100%;
+    padding: 14px;
+    display: flex;
+    z-index: 999999;
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+    flex-direction: column;
+    border-radius: 0 30px 30px 0;
+    transition: all 0.4s ease 0s;
+    box-shadow: var(--bar-shadow);
+    width: var(--mobile-filter-width);
+    -webkit-transition: all 0.4s ease 0s;
+    background-color: var(--background-color);
+  }
+
+
+  .filterHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filterHeader h2 {
+    font-size: 0.7rem;
+    font-weight: 200;
+  }
+
+  .filterLabel {
+    font-size: 0.7rem;
+    font-weight: 200;
+  }
+
+  .dashboardFilter,
+  .dashboardExit {
+    gap: 6px;
+    display: flex;
+  }
+
+  .dashboardExit {
+    cursor: pointer;
+  }
+
+  .dashboardExit h2 {
+    text-decoration: underline;
+  }
+
+  .filterForm {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filterInputSearch {
+    display: flex;
+    padding: 0 10px;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--light-background-color);
+  }
+
+  .SearchIcon {
+    color: var(--light-background-color);
+  }
+
+  .filterInput {
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .filterInput::placeholder {
+    color: var(--light-background-color);
+  }
+
+  .filterInputContainer {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filterInputContainer h1 {
+    font-size: 0.7rem;
+    font-weight: 200;
+  }
+
+  .filterPropertyContainer {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filterPropertyContainer h1 {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .filterProperty {
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .filterCard {
+    gap: 8px;
+    width: 80px;
+    height: 60px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--dark-background-color);
+    background-color: var(--light-shade-color);
+  }
+
+  .filterCard:hover,
+  .selectedF {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+
+  .filterCard span {
+    font-size: 0.5rem;
+  }
+
+  .filtersliderContainer {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filtersliderContainer h3 {
+    font-size: 0.8rem;
+    color: var(--dark-background-color);
+  }
+
+  .filterslider {
+    height: 5px;
+    border: none;
+    appearance: none;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+  }
+
+  .filterslider::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    border-radius: 10%;
+    -webkit-appearance: none;
+    background: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+  }
+
+  .filterslider::-webkit-slider-thumb:hover {
+    background: var(--secondary-dark-color);
+    border: 2px solid var(--secondary-dark-color);
+  }
+
+  .filterslider::-webkit-slider-thumb:active {
+    background: var(--secondary-dark-color);
+    border: 2px solid var(--secondary-dark-color);
+  }
+
+  .sliderValue {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sliderValue span {
+    font-size: 0.7rem;
+  }
+
+  .ChoiceCardContain {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filterPWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filterCardSelect {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+
+  .filterCardSelect:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .selectedCard {
+    background-color: var(--secondary-color);
+  }
+
+  .filterCheckWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filterCheckContainer {
+    display: flex;
+    padding: 5px 0;
+  }
+
+  .filterCheck {
+    gap: 10px;
+    display: flex;
+    font-size: 0.6rem;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .filterService {
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap ;
+    flex-direction: column;
+  }
+  
+  .filterServiceCard {
+    gap: 5px;
+    width: 90px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    color: var(--dark-background-color);
+    background-color: var(--light-shade-color);
+
+  }
+
+  .filterServiceCard:hover {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+
+  .filterServiceCard span {
+    font-size: .6rem;
+  }
+
+
+  .btnFilter {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .filterContainer {
+    z-index: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    position: relative;
+    padding-right: 10px;
+    padding-bottom: 14px;
+    background-color: transparent;
+    width: var(--dashboard-filter-width);
+  }
+
+  .hideSearch {
+    display: none;
+  }
+
+  .exitIcon {
+    display: none;
+  }
+
+  .filterServiceCard {
+    gap: 10px;
+    width: 130px;
+  }
+
+  .filterServiceCard span {
+    font-size: .7rem;
+  }
+
+}

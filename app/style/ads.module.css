@@ -1,0 +1,163 @@
+@media screen {
+  .adsMain {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    gap: 20px;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    z-index: -1000;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
+  .formContainer {
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 16px;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--background-color);
+  }
+
+  .formHeader h1 {
+    font-size: 1rem;
+  }
+
+  .formInputContainer {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filterInputTextArea {
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--light-background-color);
+    border: 1px solid var(--light-background-color);
+  }
+
+  .filterInputTextArea::placeholder {
+    color: var(--light-background-color);
+  }
+
+  .formLabel {
+    font-size: 0.7rem;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+
+  .formInput {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    align-items: center;
+    border: 1px solid var(--light-background-color);
+  }
+
+  .formInput:hover {
+    border: 1px solid var(--secondary-color);
+  }
+
+  .formInput input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.7rem;
+    border-radius: inherit;
+    background-color: transparent;
+  }
+
+  .formInput input:-webkit-autofill,
+  .formInput input:-webkit-autofill:hover,
+  .formInput input:-webkit-autofill:focus,
+  .formInput input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--primary-color) !important;
+  }
+
+  .formInput input:focus {
+    background-color: transparent;
+  }
+
+  .formInput input::placeholder {
+    font-weight: 100;
+    color: var(--light-background-color);
+  }
+
+  .formformButton {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+
+  .formChangeUpload {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formAccount h1 {
+    font-size: 1rem;
+  }
+
+  .AdsSection {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    object-position: center;
+  }
+
+  .uploadCameraIcon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted var(--light-background-color);
+  }
+
+  .CameraIcon {
+    color: var(--light-background-color);
+  }
+
+  .IdImage {
+    border-radius: 12px;
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .adsMain {
+    position: relative;
+    overflow-y: hidden;
+    padding-bottom: 0;
+    z-index: 0;
+  }
+}

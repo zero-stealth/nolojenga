@@ -1,0 +1,24 @@
+@media screen {
+  .navbtnComponent {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .navBtn {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-items: center;
+    text-transform: capitalize;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+}

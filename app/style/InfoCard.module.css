@@ -1,0 +1,342 @@
+@media screen {
+  .infoCard{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .infoCardComponent {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  .infoCardImageComponent {
+    gap: 30px;
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  .infoCardBannerImage {
+    object-position: center;
+    border-radius: 20px;
+    position: relative;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+
+  .infoCardSpan {
+    top: 14px;
+    left: 14px;
+    z-index: 100;
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 6px 10px;
+    position: absolute;
+    width: fit-content;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+  }
+
+  .infoCardBtns {
+    top: 14px;
+    right: 14px;
+    z-index: 100;
+    display: flex;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    position: absolute;
+    width: fit-content;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+
+
+  .infoCardProfile {
+    gap: 10px;
+    right: 24px;
+    bottom: -14px;
+    display: flex;
+    cursor: pointer;
+    font-size: 0.7rem;
+    padding: 5px 6px;
+    width: fit-content;
+    position: absolute;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: var(--bar-shadow);
+    justify-content: space-between;
+    background-color: var(--background-color);
+  }
+
+  .infoCardProfileImage {
+    object-fit: cover;
+    border-radius: 360%;
+    object-position: center;
+  }
+
+  .infoCardExtraImage {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .extraImage {
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: center;
+  }
+
+  .moreInfoHeight {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoCardTextComponent {
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .infoCardTitleComponent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .infoCardTitleComponent h1 {
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+
+  .infoCardLocationComponent {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .infoCardLocationComponent h3 {
+    font-size: 0.7rem;
+    font-weight: 200;
+  }
+
+  .infoCardAreaWrapper {
+    gap: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .areaCard {
+    height: 50px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .areaCard span {
+    font-size: 0.6rem;
+  }
+
+  .areaCardInfo {
+    gap: 4px;
+    display: flex;
+    align-items: end;
+  }
+
+  .areaCardInfo span {
+    font-size: 0.7rem;
+  }
+
+  .moreInfoCardArea {
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .moreInfoCardArea h1 {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .moreInfoCardArea p {
+    text-align: justify;
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  .otherInfoCardArea h1 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding-top: 4px;
+  }
+
+  .otherInfoCardArea ol {
+    gap: 4px;
+    display: flex;
+    padding: 4px 15px;
+    flex-direction: column;
+  }
+
+  .otherInfoCardArea ol li {
+    font-weight: 100;
+    font-size: 0.7rem;
+  }
+
+  .infoCardFooter {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .infoCardFooterWrapper, .infoCardFooterCin {
+    flex: 50%;
+  }
+
+  .buyCardBtns {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+
+  .buyCardBtns:hover {
+    background-color: var(--primary-color);
+  }
+
+  .infoCardFooterWrapper{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoCardFooterCin {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoCardFooterCin h1 {
+    font-size: 1rem;
+  }
+
+  .infoCardRatingCin{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .ratingImageCin {
+    object-fit: cover;
+    border-radius: 360%;
+    object-position: center;
+  }
+
+  .ratingTextCin {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+  }
+
+  .ratingTitleCinInner{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ratingTitleCinInner h1  {
+    font-size: .8rem;
+  }
+
+  .ratingTitleCinInner span  {
+    font-size: .8rem;
+  }
+
+  .infoCardFooterCinB {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    border-radius: 20px;
+    flex-direction: column;
+    box-shadow: var(--card-shadow-line);
+    background-color: var(--background-color);
+  }
+
+  .infoCardFooterCinB h1 {
+    font-size: 1rem;
+    padding: 10px;
+
+  }
+
+  .infoCardTableS {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .infoCardTableS h3 {
+    font-weight: 300;
+    font-size: .8rem;
+    padding: 10px;
+
+  }
+
+  .infoCardFooterCinB div:nth-child(even) {
+    background-color: var(--light-shade-color);
+}
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .infoCardComponent {
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .infoCardBannerImage {
+    height: 250px;
+  }
+
+  .infoCardFooter {
+    flex-direction: row;
+  }
+
+  .areaCard span {
+    font-size: 0.8rem;
+  }
+
+  .areaCardInfo span {
+    font-size: 0.8rem;
+  }
+
+  .infoCardTextComponent {
+    gap: 15px;
+  }
+
+}

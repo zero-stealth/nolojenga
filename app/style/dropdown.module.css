@@ -1,0 +1,53 @@
+@media screen {
+.dropdownContainer {
+  gap: 10px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+
+.dropdownContainer span {
+  font-size: .8rem;
+  color: var(--dark-background-color);
+}
+
+
+.dropdownInput {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--dark-background-color);
+}
+
+.dropdownArea{
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  color: var(--dark-background-color);
+  border:1px solid var(--dark-background-color);
+
+}
+
+
+.dropdownArea span {
+  padding: 10px;
+}
+
+.dropdownArea span:hover {
+  border-radius: 8px;
+  color: var(--background-color);
+  background-color:var(--primary-color); /* Change this to your desired hover color */
+}
+
+
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+
+}

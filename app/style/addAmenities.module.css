@@ -1,0 +1,61 @@
+@media screen {
+  .addAmenitiesContainer {
+    gap:10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: var(--background-color);
+    border: 1px solid var(--light-background-color);
+  }
+
+  .addAmenitiesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .addAmenitiesHeader h1 {
+    font-size: 1rem;
+  }
+
+  .addAmenitiesButton {
+    cursor: pointer;
+    padding: 8px 30px;
+    width: fit-content;
+    border-radius: 6px;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+
+  .addAmenitiesCard {
+    display: flex;
+    width: inherit;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+
+  .addAmenitiesCard span {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: .7rem;
+    border: 1px solid var(--light-background-color);
+  }
+
+  .removeIconContainer {
+    padding-left: 10px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+    .addAmenitiesContainer {
+        overflow: hidden;
+        overflow-y: auto;
+        min-height: 200px;
+    }
+}

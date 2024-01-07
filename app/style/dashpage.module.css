@@ -1,0 +1,261 @@
+ @media screen {
+  .dashPageComponent {
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-shade-color);
+  }
+
+  .dashPageWrap {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    padding-bottom: 100px;
+  }
+
+  .PageWrapImg {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .pageTableComp {
+    gap: 15px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .dashboardCardContainer,
+  .dashboardSContainer {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    overflow: hidden;
+    overflow-x: auto;
+    align-items: center;
+    justify-content:space-between;
+  }
+
+  .dashboardSContainer {
+    color: var(--dark-background-color);
+  }
+
+  .dashboardCardContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .dashboardSContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .dashBtnAdmin {
+    gap: 10px;
+    padding: 6px;
+    margin: 10px;
+    display: flex;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-shade-color);
+  }
+
+  .dropdownWrapper {
+    position: relative;
+  }
+
+  .dropdownContainer {
+    width: 100px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+  }
+
+  .dashBtnRem {
+    width: 100%;
+
+  }
+
+  .dashBtnRem,
+  .dropdownContainer {
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: var(--dark-background-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--light-background-color);
+  }
+
+
+
+  .dropdownArea {
+    bottom: -50px;
+    width: 100px;
+    padding: 10px;  
+    cursor: pointer;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    position: absolute;
+    background-color: var(--background-color);
+    border: 1px solid var(--light-background-color);
+  }
+
+  .dropdownArea:hover {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+
+  .dashboardInfoCard {
+    gap: 4px;
+    display: flex;
+    width: 180px;
+    cursor: pointer;
+    min-width: 180px;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 10px 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    border: 1px solid var(--light-background-color);
+  }
+
+  .dashboardInfoCard:hover {
+    color: var(--background-color);
+    background-color: var(--secondary-dark-color);
+  }
+
+  .dashboardInfoCard h2 {
+    font-size: 1.2rem;
+  }
+
+  .dashboardInfoCard span {
+    color: var(--dark-background-color);
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  .dashboardInfoCard:hover span {
+    color: var(--background-color);
+  }
+
+  .dashboardSCard {
+    gap: 4px;
+    height: 80px;
+    display: flex;
+    cursor: pointer;
+    min-width: 130px;
+    border-radius: 8px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-color);
+    background-color: var(--light-shade-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+
+  .dashboardSCard:hover {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+
+  .dashboardSCard span {
+    font-size: 0.7rem;
+  }
+
+  .upgradeAccountS h1 {
+    font-size: 1rem;
+  }
+
+  .dashCardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dashCardHeader h1 {
+    font-size: 0.9rem;
+  }
+
+  .dashCardBtn {
+    gap: 4px;
+    display: flex;
+    cursor: pointer;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .dashPageComponent {
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .dashPageWrap {
+    gap: 10px;
+    padding: 0;
+    z-index: 0;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .dashBtnAdmin {
+    gap: 0;
+    padding: 10px;
+    background-color: var(--background-color);
+  }
+
+  .dashBtnRem,
+  .dropdownContainer {
+    width: 180px;
+  }
+
+  .dropdownContainer {
+    justify-content: space-around;
+  }
+
+  .dropdownArea {
+    width: 100%;
+    padding: 10px;
+  }
+
+
+  .PageWrapInfo,
+  .PageWrapImg {
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .PageWrapInfo {
+    flex: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .PageWrapImg {
+    flex: 45%;
+  }
+}

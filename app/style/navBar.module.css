@@ -1,0 +1,113 @@
+@media screen {
+  .NavBarComponent {
+    width: 100%;
+    display: none;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px solid var(--light-background-color) ;
+  }
+
+  .NavBarApartment {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .NavBarApartment h1 {
+    font-size: 1.2rem;
+  }
+
+  .NavBarProfileApartment {
+    border-radius: 8px;
+    object-position: center;
+  }
+
+  .NavBarSearch {
+    gap: 10px;
+    display: flex;
+    padding:0 10px;
+    font-size: .8rem;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: var( --background-color);
+    border: 1px solid var(--light-background-color);
+
+  }
+
+  .NavBarSearchIcon{
+    color: var(--light-background-color);
+  }
+
+
+  .navBarSearchInput::placeholder {
+    color: var(--light-background-color);
+
+  }
+
+  .navBarSearchInput{
+    border: none;
+    width: 200px;
+    padding: 8px 0;
+    outline: none;
+    border-radius: 30px;
+    color: var(--light-background-color);
+
+  }
+
+  .navLeftWrapper{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .NavBarLinklNotification {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 360%;
+    justify-content: center;
+    box-shadow: var(--bar-shadow);
+    background-color: var(--background-color);
+
+  }
+
+  .NavBarLinkProfileWrapper {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 360%;
+  }
+
+  .NavBarProfileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 360%;
+    object-position: center;
+  }
+
+  .activeNavBarProfileImage{
+    border: 1px solid var(--secondary-color);
+  }
+
+  .activeNotificationC {
+    color: var(--secondary-color);
+  }
+  
+  }
+  
+  /* using it as global style for larger devices  */
+  @media only screen and (min-width: 48em) {
+    .NavBarComponent {
+    display: flex;
+    }
+  }
+  

@@ -1,0 +1,206 @@
+@media screen {
+  .notificationComponent {
+    gap: 20px;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .notificationHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .notificationHeader h1 {
+    font-size: 1rem;
+  }
+
+  .notificationHeader p {
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 100;
+  }
+
+  .alertNotificationComponent {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--light-background-color);
+  }
+
+  .alertNotification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .alertContainer {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .alertInfo {
+    gap: 4px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .alertInfo h1 {
+    font-size: 0.8rem;
+
+  }
+
+  .alertInfo p {
+    font-size: 0.7rem;
+    font-weight: 100;
+  }
+
+  .toggleNotification {
+    background-color: var(--light-background-color);
+    -webkit-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    width: 50px;
+    height: 20px;
+  }
+
+  .lineNotification {
+      width: 100%;
+      height: 1px;
+      background-color: var(--light-background-color);
+  }
+  
+
+  .notificationAreaComponent {
+    height: 100%;
+    gap: 30px;
+    z-index: -999;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .notificationArea {
+    gap: 5px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .notification {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .notificationProfileImage {
+    object-fit: cover;
+    border-radius: 360%;
+    object-position: center;
+
+  }
+
+  .notificationImageContainer{
+    gap: 10px;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: start;
+    flex-direction: column-reverse;
+
+  }
+
+  .notificationImage{
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+
+    }
+
+    .NonotificationImage {
+      object-fit: cover;
+      object-position: center;
+    }
+
+  .notificationInfo {
+    gap: 4px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .notificationInfo h1 {
+    font-size: .8rem;
+    font-weight: 600;
+
+  }
+
+  .notificationInfo p {
+    font-size: .7rem;
+    font-weight: 100;
+  }
+
+  .deleteWrapperN {
+    padding: 4px;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: var(--bar-shadow);
+    border: 1px solid var(--light-shade-color);
+    background-color: var(--background-color);
+  }
+
+  .deleteNotificationIcon {
+    color: var(--tertiary-color);
+  }
+
+  .toggleDot {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 360%;
+    background-color: var(--background-color);
+    border: 1px solid var(--light-background-color);
+  }
+
+  .moveDot {
+    justify-content: end;
+    background-color: var(--primary-color);
+  }
+
+  .noNotificationArea {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .notificationComponent {
+    padding: 0;
+    max-height: 400px;
+    height: fit-content;
+    padding: 4px 10px;
+
+  }
+
+  .notificationAreaComponent {
+    z-index: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 400px;
+  }
+
+}

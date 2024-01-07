@@ -1,0 +1,50 @@
+@media screen {
+  .roomComponent {
+    border-radius: 20px;
+    /* position: relative; */
+    height: 350px;
+    width: 100%;
+  }
+
+  .roomImageContainer {
+    top: 50%;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .roomBtn {
+    right: 10px;
+    z-index: 99;
+    bottom: 10px;
+    cursor: pointer;
+    font-size: .8rem;
+    position: absolute;
+    padding: 10px 30px;
+    border-radius: 13px;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+
+  .roomBtn:hover {
+    background-color: var(--primary-color);
+  }
+
+  .roomIcon {
+    cursor: pointer;
+    color: var(--dark-background-color);
+
+  }
+
+
+  .roomImage {
+    border-radius: inherit;
+  }
+}
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+}

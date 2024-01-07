@@ -1,0 +1,106 @@
+@media screen {
+  .filterForm {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    text-align: start;
+    flex-direction: column;
+  }
+
+  .filterForm h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark-background-color);
+  }
+
+  .filterForm h1 span {
+    color: var(--secondary-color);
+  }
+
+
+  .filterInput {
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .filterInput::placeholder {
+    color: var(--light-background-color);
+  }
+
+  .filterInputContainer {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filterInputTextArea {
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--light-background-color);
+    border: 1px solid var(--light-background-color);
+  }
+
+  .filterInputTextArea::placeholder {
+    color: var(--light-background-color);
+  }
+
+
+
+  .filterPropertyContainer {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+  .filterCheckWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filterCheckContainer {
+    display: flex;
+    padding: 5px 0;
+  }
+
+  .filterCheck {
+    gap: 10px;
+    display: flex;
+    font-weight: 300;
+    font-size: 0.7rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .btnFilter {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    width: 100%;
+  }
+
+  .btnFilter:hover {
+    background-color: var(--primary-color);
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .filterForm h1 {
+    font-size: .9rem;
+  }
+}

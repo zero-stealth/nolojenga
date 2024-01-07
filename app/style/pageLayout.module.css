@@ -1,0 +1,41 @@
+@media screen {
+  .pageLayout {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    overflow: hidden;
+  }
+
+  /* .pageContentLayout {
+  } */
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .pageLayout {
+    gap: 10px;
+    padding: 10px;
+    display: flex;
+
+  }
+
+ 
+  .filterLayout {
+    display: none;
+  }
+
+  .layoutContent {
+    width: var(--side-bar-width);
+  }
+
+  .dashboardLayout {
+    height: 100%;
+  }
+
+  .pageContentLayout {
+    width: calc(100% - var(--side-bar-width));
+  }
+}

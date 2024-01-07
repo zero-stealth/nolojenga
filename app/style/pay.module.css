@@ -1,0 +1,98 @@
+@media screen {
+.payComponent {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.payImageComponent {
+    position: relative;
+    height: 150px;
+    width: 100%;
+
+}
+
+.payImage {
+    border-radius: 10px;
+}
+
+.imageSlider {
+    gap: 5px;
+    padding: 4px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+
+  }
+
+  .circleAdv {
+    width: 10px;
+    height: 10px;
+    border-radius: 360%;
+    border: 2px solid var(--dark-background-color);
+  }
+
+  .activeCircle {
+    width: 20px;
+    height: 10px;
+    border-radius: 12px;
+    background-color: var(--dark-background-color);
+  }
+
+  .paySectionInfo {
+    gap: 5px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .paySectionInfo span {
+    font-size: .8rem;
+    font-weight: 300;
+  }
+
+  .payInnerWrapper {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .payInnerImage {
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 360%;
+    object-position: center;
+    justify-content: center;
+  }
+
+  .btnPay {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    width: 100%;
+  }
+
+  .btnPay:hover {
+    background-color: var(--secondary-dark-color);
+
+  }
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+
+}

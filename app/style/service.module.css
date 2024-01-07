@@ -1,0 +1,228 @@
+@media screen {
+  .mainComponent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .autoComponent {
+    gap: 12px;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+  }
+
+  .LoveComponent {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 360%;
+    justify-content: center;
+    box-shadow: var(--bar-shadow);
+    background-color: var(--background-color);
+  }
+
+  .LoveIcon {
+    color: var(--tertiary-color);
+  }
+
+  .serviceCardContain {
+    gap: 20px;
+    display: flex;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+
+  .serviceCardContain::-webkit-scrollbar {
+    display: none;
+  }
+
+  .autoSection {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    gap: 10px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    padding-bottom: 200px;
+    flex-direction: column;
+  }
+
+  .autoSectionCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .autoSectionHeader {
+    display: flex;
+    padding: 8px 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .autoSectionHeader span {
+    font-size: 0.8rem;
+  }
+
+  .autoSectionContain {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .selectedCard {
+    box-shadow: var(--bar-shadow);
+  }
+
+  .serviceDiv {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .autoSectionInfo {
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 20px 10px;
+  }
+
+  .autoSectionInfo::-webkit-scrollbar {
+    display: none;
+  }
+
+  .autoSectionInfo::-webkit-scrollbar {
+    display: none;
+  }
+
+  .autoSectionF {
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .autoSectionF span {
+    text-decoration: underline;
+  }
+
+  .CardArea {
+    gap: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .viewContainer {
+    gap: 20px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--dark-background-color);
+  }
+
+  .viewContainer h3 {
+    font-size: 1rem;
+  }
+
+  .viewContainer h1 {
+    font-size: 1.2rem;
+  }
+
+  .viewResult h1 {
+    font-size: 1rem;
+  }
+
+  .viewBtn {
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 4px;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+
+  .infoServiceFooterCin {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoServiceFooterCin h1 {
+    font-size: 1rem;
+  }
+
+  .ServiceImageCin{
+    object-fit: cover;
+    border-radius: 12px;
+    object-position: center;
+    min-width: 200px;
+  }
+
+  .infoServiceCin {
+    gap: 10px;
+    display: flex;
+    min-width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;  
+    justify-self: space-between;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .autoComponent {
+    padding: 10px 0;
+    flex-direction: row;
+  }
+
+  .mainComponent {
+    padding-right: 10px;
+  }
+
+  .autoSection {
+    z-index: 0;
+    position: relative;
+    border-radius: 30px;
+    padding-bottom: 0;
+    background-color: var(--light-shade-color);
+  }
+
+  .CardArea {
+    gap: 10px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .serviceDiv {
+    gap: 0;
+    border-radius: 30px;
+    background-color: var(--light-shade-color);
+  }
+
+  .autoSectionInfo {
+    padding: 15px 10px;
+  }
+}

@@ -1,0 +1,371 @@
+@media screen {
+  .transactionComponent {
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: var(--light-shade-color);
+  }
+
+  .transactionWrap {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    gap: 10px;
+    z-index: -1;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    flex-direction: column-reverse;
+    background-color: var(--light-shade-color);
+  }
+
+  .PageWrapCard {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .PagetransactionWrap {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .PagetransactionBtnContain {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .transactionBtn {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    justify-content: center;
+    background-color: var(--light-shade-color);
+  }
+
+  .transactionBtn:hover {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+
+  .activeTransactionBtn {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+
+  .transactionUse {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    color: var(--dark-background-color);
+  }
+
+  .transactionUse h1 {
+    font-size: 1rem;
+  }
+
+  .transactionCardContain {
+    gap: 10px;
+    display: flex;
+    padding: 10px 0;
+    overflow: hidden;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .transactionCardContain span {
+    font-size: 0.8rem;
+    font-weight: 300px;
+  }
+
+  .transactionCardContain h1 {
+    font-size: 0.9rem;
+    font-weight: 600px;
+  }
+
+  .transCard {
+    gap: 8px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    padding: 10px;
+    min-width: 200px;
+    border-radius: 12px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-color);
+  }
+
+  .transactionInfoContain {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .transactionHeader {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    justify-content: space-between;
+  }
+
+  .transactionHeader h1 {
+    font-size: 1rem;
+  }
+
+  .transactionDate {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: var(--dark-background-color);
+    background-color: var(--background-color);
+  }
+
+  .transactionMsgContain {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .transactionMsgWrapper {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .transactionCircle {
+    width: 15px;
+    height: 15px;
+    border-radius: 360%;
+    border: 2px solid var(--secondary-color);
+  }
+
+  .transactionMsg {
+    gap: 10px;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    font-size: 0.8rem;
+    font-weight: 400px;
+    flex-direction: column;
+    border-radius: 0 12px 12px 12px;
+    color: var(--dark-background-color);
+    background-color: var(--background-color);
+  }
+
+  .cardWalletSection {
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cardWalletImage {
+    width: 100%;
+    border-radius: 20px;
+    filter: brightness(90%);
+  }
+
+  .WalletInSection {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .WalletInSection h1 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .cardProfileContain {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .cardProfileImg {
+    object-fit: cover;
+    border-radius: 360%;
+    object-position: center;
+  }
+
+  .cardProfileInfo {
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardProfileInfo h1 {
+    font-size: 0.8rem;
+    font-weight: 200px;
+  }
+
+  .cardProfileInfo span {
+    font-size: 0.8rem;
+    color: var(--light-background-color);
+  }
+
+  .cardInnerWallet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardWalletContain {
+    object-position: center;
+    position: relative;
+    height: 160px;
+    width: 100%;
+  }
+
+  .cardWalletContainInfo {
+    gap: 10px;
+    z-index: 100;
+    display: flex;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--background-color);
+  }
+
+  .cardWalletContainInfo h3 {
+    font-weight: 500;
+  }
+
+  .cardInnerWalletBtn {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .InnerWalletBtn {
+    gap: 10px;
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 8px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--background-color);
+    background-color: var(--green-color);
+  }
+
+  .InnerWalletBtn span {
+    font-size: 0.7rem;
+  }
+
+  .InnerWalletBtnTop {
+    background-color: var(--high-color);
+  }
+
+  .InnerWalletBtnMiddle {
+    background-color: var(--secondary-color);
+  }
+
+  .cardWalletLink {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardWalletLink h1 {
+    font-size: 0.8rem;
+    text-decoration: underline;
+  }
+
+  .cardWalletLinkShare {
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: space-between;
+    box-shadow: var(--card-shadow);
+  }
+
+  .cardWalletLinkShare span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--dark-background-color);
+  }
+
+  .InnerWalletLinkIcon {
+    color: var(--secondary-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .transactionComponent {
+    padding: 10px;
+  }
+
+  .transactionWrap {
+    padding: 0;
+    z-index: 0;
+    height: 100%;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+
+  .PagetransactionWrap,
+  .PageWrapCard {
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .PagetransactionWrap {
+    flex: 80%;
+  }
+
+  .transactionBtn {
+    width: auto;
+  }
+
+  .transactionCardContain {
+    padding: 10px;
+  }
+
+  .transactionCardContain h1 {
+    font-size: 0.9rem;
+  }
+
+  .transactionInfoContain {
+    max-height: 160px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .cardWalletSection {
+    gap: 0;
+    padding: 10px;
+    box-shadow: var(--card-shadow);
+    background-color: var(--background-color);
+  }
+}
