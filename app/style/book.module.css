@@ -197,6 +197,24 @@
     text-align: start;
   }
 
+  .tableContainerInner tbody {
+    display: block;
+    height: 350px;
+    overflow: auto;
+  }
+  
+  .tableContainerInner thead,
+  .tableContainerInner tbody tr {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+  
+  
+  .tableContainerInner  thead {
+    width: calc(100% - 1em);
+  }
+
 
   .tableBtn {
     font-size: .7rem;

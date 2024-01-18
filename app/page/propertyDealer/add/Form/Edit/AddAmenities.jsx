@@ -92,7 +92,7 @@ export default function AddAmenities() {
           disabled={isLoading}
           className={styles.formButton}
         >
-          {isLoading ? <Loader /> : "Add Amenities"}
+          {isLoading ? <Loader /> : "Save Amenities"}
         </button>
       </form>
       </div>

@@ -249,6 +249,9 @@
   }
 
   .formContainer {
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     min-height: 450px;
     height: 100%;
   }

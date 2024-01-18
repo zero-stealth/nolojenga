@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import AreaIcon from "@/public/icons/AreaIcon.svg";
 import BedIcon from "@/public/icons/BedroomIcon.svg";
@@ -147,6 +147,7 @@ export default function AddRental() {
   };
 
   return (
+
     <form onSubmit={onSubmit} className={styles.formContainer}>
       <div className={styles.formHeader}>
         <h1>Add Property</h1>

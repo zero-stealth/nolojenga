@@ -1,0 +1,40 @@
+@media screen {
+  .historyContainer {
+    gap: 10px;
+    padding: 4px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topupHeader {
+    display: flex;
+    padding: 10px;
+    border-radius: 4px;
+    justify-content: space-between;
+    background-color: var(--secondary-dark-color);
+  }
+
+  .topupHeader h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--light-background-color);
+  }
+
+  .historyMain {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .historyMain h1 {
+    font-size: .8rem;
+    color: var(--light-background-color);
+  }
+}
+
+@media only screen and (min-width: 48em) {
+
+}

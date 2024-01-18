@@ -181,16 +181,20 @@ const Locations = [
   "Nairobi, Rongai Rongai",
   "Nairobi, Langata",
 ];
-const Needs = [
-  "House to rent",
-  "House to buy",
-  "Apartment to rent",
-  "Apartment to buy",
-  "Commercial property",
-  "Land to lease",
-  "Land to buy",
-  "Store to rent",
-  "Store to buy",
+const Category = [
+  "Bedsiter",
+  "Single",
+  "Ground floor",
+  "First floor",
+  "Second floor",
+  "Third floor",
+  "Fourth floor",
+  "Penthouse",
+  "Duplex",
+  "Triplex",
+  "Cottage",
+  "Villa",
+  "Mansion",
 ];
 
 const Bedrooms = ["1", "2", "3", "5+"];
@@ -319,16 +323,7 @@ export default function FilterComponent() {
             onSelect={setSelectedOption}
           />
         </div>
-        {/* Needs */}
-        <div className={styles.filterInputContainer}>
-          <h1>Needs</h1>
-          <Dropdown
-            options={Needs}
-            Icon={homeIcon}
-            dropPlaceHolder="Select your need"
-            onSelect={setSelectedOption}
-          />
-        </div>
+
         {/* Incharge */}
         <div className={styles.filterInputContainer}>
           <h1>Incharge</h1>
@@ -357,25 +352,15 @@ export default function FilterComponent() {
             ))}
           </div>
         </div>
-        {/* Price Slider */}
-        <div className={styles.filterPropertyContainer}>
-          <h1>Monthly budget</h1>
-          <div className={styles.filtersliderContainer}>
-            <input
-              type="range"
-              min="1"
-              max="1000000000"
-              step="1"
-              value={score}
-              onChange={handleScoreChange}
-              className={`${styles.filterslider} ${styles.activeSlider}`}
-            />
-            <div className={styles.sliderValue}>
-              <span>1</span>
-              <span>1000000000</span>
-            </div>
-            <h3>Ksh {score}/-</h3>
-          </div>
+        {/* Category */}
+        <div className={styles.filterInputContainer}>
+          <h1>Category</h1>
+          <Dropdown
+            options={Category}
+            Icon={homeIcon}
+            dropPlaceHolder="Select category"
+            onSelect={setSelectedOption}
+          />
         </div>
         {/* Bedrooms */}
         <div className={styles.filterPropertyContainer}>
@@ -409,6 +394,26 @@ export default function FilterComponent() {
                 <span>{item}</span>
               </div>
             ))}
+          </div>
+        </div>
+        {/* Price Slider */}
+        <div className={styles.filterPropertyContainer}>
+          <h1>Monthly budget</h1>
+          <div className={styles.filtersliderContainer}>
+            <input
+              type="range"
+              min="1"
+              max="1000000000"
+              step="1"
+              value={score}
+              onChange={handleScoreChange}
+              className={`${styles.filterslider} ${styles.activeSlider}`}
+            />
+            <div className={styles.sliderValue}>
+              <span>1</span>
+              <span>1000000000</span>
+            </div>
+            <h3>Ksh {score}/-</h3>
           </div>
         </div>
         {/* Service */}

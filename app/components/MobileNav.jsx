@@ -46,17 +46,17 @@
           className={styles.mobileLinkWrapper}
           onClick={() => clearLinkNames()}
         >
-          <Link className={styles.mobileLink} href="/page/dashboard">
+          <Link className={styles.mobileLink} href="dashboard">
             <HomeIcon
               className={`${styles.mobileIcon} ${
-                pathname === "/page/dashboard" ? styles.linkName : ""
+                pathname.endsWith("dashboard")  ? styles.linkName : ""
               }`}
               alt="Home icon"
               width={24}
               height={24}
             />
             <div
-              className={pathname === "/page/dashboard" ? styles.linkName : ""}
+              className={pathname.endsWith("dashboard")  ? styles.linkName : ""}
             >
               <span>Home</span>
             </div>
@@ -66,21 +66,19 @@
         {/* Search Link */}
         <div className={styles.mobileLinkWrapper}>
           <div
-            className={`${styles.mobileLink} ${showFilter ? styles.ShowF : ""}`}
+            className={styles.mobileLink}
             onClick={() => {
               toggleFilter();
               clearLinkNames();
             }}
           >
             <SearchIcon
-              className={`${styles.mobileIcon} ${
-                showFilter ? styles.linkName : ""
-              }`}
+              className={styles.mobileIcon}
               alt="Search icon"
               width={24}
               height={24}
             />
-            <div className={showFilter ? styles.linkName : ""}>
+            <div>
               <span>Search</span>
             </div>
           </div>
@@ -113,17 +111,17 @@
             toggleNotification();
           }}
         >
-          <Link className={styles.mobileLink} href="/page/notification">
+          <Link className={styles.mobileLink} href="notification">
             <NotificationIcon
               className={`${styles.mobileIcon} ${
-                pathname === "/page/notification" ? styles.linkName : ""
+                pathname.endsWith("notification") ? styles.linkName : ""
               }`}
               alt="Notification icon"
               width={24}
               height={24}
             />
             <div
-              className={pathname === "/page/notification" ? styles.linkName : ""}
+              className={pathname.endsWith("notification") ? styles.linkName : ""}
             >
               <span>Notification</span>
             </div>
@@ -134,10 +132,10 @@
           className={styles.mobileLinkWrapper}
           onClick={() => clearLinkNames()}
         >
-          <Link className={styles.profileLink} href="/page/settingsManagement">
+          <Link className={styles.profileLink} href="settingsManagement">
             <Image
               className={`${styles.mobileProfileImage} ${
-                pathname === "/page/settingsManagement" ? styles.activeMobileProfileImage : ""
+                pathname.endsWith("settingsManagement") ||  pathname === "/page/settingsManagement" ? styles.activeMobileProfileImage : ""
               }`}
               src={ProfileImage}
               alt="Profile icon"

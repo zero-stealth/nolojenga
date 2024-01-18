@@ -194,31 +194,6 @@ export default function DashboardComponent() {
           </div>
         </Link>
         <Link
-          href="/page/tenant/management"
-          className={`${styles.dashLinkContainer} ${
-            isAccountPro ? styles.showManagement : ""
-          }`}
-          onClick={() => toggleShow()}
-        >
-          <div
-            className={`${styles.innerDashLink} ${
-              pathname === "/page/tenant/management" ||
-              pathname.startsWith("/page/tenant/management/")
-                ? styles.activeDash
-                : ""
-            }`}
-          >
-            <ManagementIcon className={styles.dashIcon} alt="management icon" />
-            <h1>management</h1>
-            <Image
-              src={PipeIcon}
-              className={styles.pipeIcon}
-              alt="pipe icon"
-              height={20}
-            />
-          </div>
-        </Link>
-        <Link
           href="/page/tenant/settings"
           className={styles.dashLinkContainer}
           onClick={() => toggleShow()}

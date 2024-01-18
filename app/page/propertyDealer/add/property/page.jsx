@@ -3,7 +3,7 @@
   import { useState } from "react";
   import NavBar from "@/app/components/NavBar";
   import AddAmenities from "@/app/page/propertyDealer/add/Form/Add/AddAmenities";
-  import AddRental from "@/app/page/propertyDealer/add/Form/Add/AddProperties";
+  import AddRental from "@/app/page/propertyDealer/add/properties/page";
   import styles from "@/app/style/add.module.css";
 
 export default function AddProperty() {
@@ -19,7 +19,6 @@ export default function AddProperty() {
         break;
       case "addAmenities":
         setActiveComponent("addRules");
-        break;
         break;
       default:
         break;

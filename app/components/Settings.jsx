@@ -29,19 +29,19 @@ export default function Settings() {
 
   return (
     <div className={styles.SettingsManagementContainer}>
-      <Link className={styles.SettingsManagementLink} href="settings">
+      <Link className={styles.SettingsManagementLink} href="dashboard">
         <div
           className={
-            pathname === "/page/settings" ? styles.SettingsManagementActive : ""
+            pathname === "dashboard" ? styles.SettingsManagementActive : ""
           }
         >
           Manage Your Account
         </div>
         <UpgradeIcon
           className={`${styles.SettingsManagementIcon} ${
-            pathname === "settings" ? styles.SettingsManagementActive : ""
+            pathname === "dashboard" ? styles.SettingsManagementActive : ""
           }`}
-          alt="Management icon"
+          alt="dashboard icon"
           width={20}
           height={20}
         />
@@ -58,7 +58,7 @@ export default function Settings() {
           className={`${styles.SettingsManagementIcon} ${
             pathname === "settings" ? styles.SettingsManagementActive : ""
           }`}
-          alt="account icon"
+          alt="settings icon"
           width={20}
           height={20}
         />
@@ -75,15 +75,15 @@ export default function Settings() {
           className={`${styles.SettingsManagementIcon} ${
             pathname === "settings" ? styles.SettingsManagementActive : ""
           }`}
-          alt="account icon"
+          alt="settings icon"
           width={20}
           height={20}
         />
       </Link>
-      <Link className={styles.SettingsManagementLink} href="settings">
+      <Link className={styles.SettingsManagementLink} href="transaction">
         <div
           className={`${styles.SettingsManagementspan} ${
-            pathname === "settings" ? styles.SettingsManagementActive : ""
+            pathname === "transaction" ? styles.SettingsManagementActive : ""
           }`}
         >
           <span>Wallet </span>
@@ -92,27 +92,27 @@ export default function Settings() {
         </div>
         <BalanceIconStatus
           className={`${styles.SettingsManagementIcon} ${
-            pathname === "settings" ? styles.SettingsManagementActive : ""
+            pathname === "transaction" ? styles.SettingsManagementActive : ""
           }`}
           onClick={toggleBalance}
-          alt="account icon"
+          alt="transaction icon"
           width={20}
           height={20}
         />
       </Link>
-      <Link className={styles.SettingsManagementLink} href="settings">
+      <Link className={styles.SettingsManagementLink} href="/authentication/signin">
         <div
           className={
-            pathname === "authentication/signin" ? styles.SettingsManagementActive : ""
+            pathname === "/authentication/signin" ? styles.SettingsManagementActive : ""
           }
         >
           Logout
         </div>
         <LogoutIcon
           className={`${styles.SettingsManagementIcon} ${
-            pathname === "authentication/signin" ? styles.SettingsManagementActive : ""
+            pathname === "/authentication/signin" ? styles.SettingsManagementActive : ""
           }`}
-          alt="account icon"
+          alt="logout icon"
           width={20}
           height={20}
         />

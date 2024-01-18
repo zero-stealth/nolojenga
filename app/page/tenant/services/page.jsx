@@ -264,7 +264,7 @@ export default function ServicesPage() {
               ""
             )}
           </div>
-          <div className={styles.CardArea}>
+          <div className={styles.CardArea} style={{ overflow: showView == false ? "auto" : "hidden" }}>
             {data.map((d) => (
               <ServiceCard
                 key={d.id}
@@ -282,10 +282,7 @@ export default function ServicesPage() {
                 ServiceCardProfileImage={d.ProfileImage}
               />
             ))}
-          </div>
-        </div>
-      </div>
-      <PopupComponent
+                  <PopupComponent
         Top={0}
         Left={0}
         Right={0}
@@ -327,6 +324,9 @@ export default function ServicesPage() {
         }
         isOpen={payPopup}
       />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

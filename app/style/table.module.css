@@ -3,7 +3,6 @@
     gap: 10px;
     width: 100%;
     height: 100%;
-    padding: 10px;
     display: flex;
     height: fit-content;
     border-radius: 12px;
@@ -116,12 +115,27 @@
 
 @media only screen and (min-width: 48em) {
   .tableContainer {
-    overflow: hidden;
-    overflow-y: auto;
-    max-height: 280px;
-    height: fit-content;
+    padding: 10px;
   }
-
+  
+  .tableContainer tbody {
+    display: block;
+    height: 200px;
+    overflow: auto;
+  }
+  
+  .tableContainer thead,
+  .tableContainer tbody tr {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+  
+  
+  .tableContainer  thead {
+    width: calc(100% - 1em);
+  }
+  
   
   .tableHeader h1 {
     font-size: 0.9rem;

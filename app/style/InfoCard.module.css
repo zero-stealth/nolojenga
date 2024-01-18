@@ -77,7 +77,7 @@
     position: absolute;
     align-items: center;
     border-radius: 20px;
-    box-shadow: var(--bar-shadow);
+    box-shadow: var(--card-shadow);
     justify-content: space-between;
     background-color: var(--background-color);
   }

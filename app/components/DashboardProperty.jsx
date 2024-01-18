@@ -64,7 +64,13 @@ export default function DashboardComponent() {
         >
           <div
             className={`${styles.innerDashLink} ${
-              pathname === "/page/propertyDealer/dashboard" || pathname == "/" || pathname.startsWith('/page/propertyDealer/edit/ads/')
+              pathname === "/page/propertyDealer/dashboard" ||
+              pathname == "/" ||
+                pathname.startsWith("/page/propertyDealer/add/property") ||
+              pathname.startsWith("/page/propertyDealer/edit/ads/") ||
+              pathname.startsWith(
+                "/page/propertyDealer/edit/property/properties"
+              )
                 ? styles.activeDash
                 : ""
             }`}
@@ -86,7 +92,8 @@ export default function DashboardComponent() {
         >
           <div
             className={`${styles.innerDashLink} ${
-              pathname === "/page/propertyDealer/clients" || pathname.startsWith('/page/propertyDealer/clients/')
+              pathname === "/page/propertyDealer/clients" ||
+              pathname.startsWith("/page/propertyDealer/clients/")
                 ? styles.activeDash
                 : ""
             }`}
@@ -108,7 +115,8 @@ export default function DashboardComponent() {
         >
           <div
             className={`${styles.innerDashLink} ${
-              pathname === "/page/propertyDealer/properties" || pathname.startsWith('/page/propertyDealer/properties/')
+              pathname === "/page/propertyDealer/properties" ||
+              pathname.startsWith("/page/propertyDealer/properties/") || pathname.startsWith("/page/propertyDealer/edit/property/1")
                 ? styles.activeDash
                 : ""
             }`}

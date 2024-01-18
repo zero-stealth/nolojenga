@@ -307,7 +307,7 @@ export default function SalesPage() {
   const renderCardArea = () => {
     if (filterType === "House") {
       return (
-        <div className={styles.CardArea}>
+        <div className={styles.CardArea} style={{ overflow: showView == false ? "auto" : "hidden" }}>
           {HouseData.map((d) => (
             <CardComponent
               key={d.id}
@@ -326,65 +326,7 @@ export default function SalesPage() {
               className={styles.selectedCard}
             />
           ))}
-        </div>
-      );
-    } else if (filterType === "Land") {
-      return (
-        <div className={styles.CardArea}>
-          {LandData.map((d) => (
-            <LandCard
-              key={d.id}
-              CardId={d.id}
-              CardTitle={d.Title}
-              CardBannerImage={d.BannerImage}
-              CardPrice={d.Price}
-              CardProfileImage={d.ProfileImage}
-              CardRating={d.Rating}
-              CardLocation={d.Location}
-              CardArea={d.Area}
-              className={styles.selectedCard}
-            />
-          ))}
-        </div>
-      );
-    } else {
-      return null;
-    }
-  };
-
-  return (
-    <div className={styles.mainComponent}>
-      <NavBar />
-      <div className={styles.autoComponent}>
-        <FilterComponent />
-        <div className={styles.autoSection}>
-          <div className={styles.autoSectionHeader}>
-            {filterType === "House" ? (
-              <span>{`${HouseData.length} ${filterType} Results`}</span>
-            ) : (
-              <span>{`${LandData.length} ${filterType} Results`}</span>
-            )}
-            {showFilter && (
-              <div
-                className={styles.autoSectionF}
-                onClick={() => {
-                  toggleFilter();
-                }}
-              >
-                <span>Show Filter</span>
-                <FilterIcon
-                  className={styles.FilterIcon}
-                  alt="Filter icon"
-                  width={16}
-                  height={16}
-                />
-              </div>
-            )}
-          </div>
-          {renderCardArea()}
-        </div>
-      </div>
-      <PopupComponent
+              <PopupComponent
         Top={0}
         Left={0}
         Right={0}
@@ -426,6 +368,106 @@ export default function SalesPage() {
           }
           isOpen={payPopup}
         />
+        </div>
+      );
+    } else if (filterType === "Land") {
+      return (
+        <div className={styles.CardArea} style={{ overflow: showView == false ? "auto" : "hidden" }}>
+          {LandData.map((d) => (
+            <LandCard
+              key={d.id}
+              CardId={d.id}
+              CardTitle={d.Title}
+              CardBannerImage={d.BannerImage}
+              CardPrice={d.Price}
+              CardProfileImage={d.ProfileImage}
+              CardRating={d.Rating}
+              CardLocation={d.Location}
+              CardArea={d.Area}
+              className={styles.selectedCard}
+            />
+          ))}
+              <PopupComponent
+        Top={0}
+        Left={0}
+        Right={0}
+        Bottom={0}
+        Width={350}
+        onClose={toggleShowView}
+        content={
+          <div className={styles.viewContainer}>
+            <h3>To view the results, make a payment of</h3>
+            <h1>ksh. 500</h1>
+            <button className={styles.viewBtn} onClick={openPay}>
+              Pay to view
+            </button>
+          </div>
+        }
+        isOpen={showView}
+      />
+     <PopupComponent
+          Top={0}
+          Left={0}
+          Right={0}
+          Bottom={0}
+          Width={300}
+          onClose={togglePayPopup}
+          content={
+            <div className={styles.viewResult}>
+              <h1>Pay to view</h1>
+              {PayCardData.map((d) => (
+                <PayCard
+                  key={d.id}
+                  PayPrice={d.price}
+                  SenderImage={d.Sender}
+                  RecieverImage={d.Reciever}
+                  SenderAccount={d.SenderAccount}
+                  RecieverAccount={d.RecieverAccount}
+                />
+              ))}
+            </div>
+          }
+          isOpen={payPopup}
+        />
+        </div>
+      );
+    } else {
+      return null;
+    }
+  };
+
+  return (
+    <div className={styles.mainComponent}>
+      <NavBar />
+      <div className={styles.autoComponent}>
+        <FilterComponent />
+        <div className={styles.autoSection}>
+          <div className={styles.autoSectionHeader}>
+            {filterType === "House" ? (
+              <span>{`${HouseData.length} ${filterType} Results`}</span>
+            ) : (
+              <span>{`${LandData.length} ${filterType} Results`}</span>
+            )}
+            {showFilter && (
+              <div
+                className={styles.autoSectionF}
+                onClick={() => {
+                  toggleFilter();
+                }}
+              >
+                <span>Show Filter</span>
+                <FilterIcon
+                  className={styles.FilterIcon}
+                  alt="Filter icon"
+                  width={16}
+                  height={16}
+                />
+              </div>
+            )}
+          </div>
+          {renderCardArea()}
+        </div>
+      </div>
     </div>
   );
 }

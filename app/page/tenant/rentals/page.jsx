@@ -222,8 +222,6 @@ export default function RentalsPage() {
   const [payPopup, setPayPopup] = useState(false);
   const [showView, setShowView] = useState(false);
 
-
-
   useEffect(() => {
     setShowView(true);
   }, []);
@@ -232,14 +230,14 @@ export default function RentalsPage() {
     setPayPopup(!payPopup);
   };
 
-  const toggleShowView= () => {
+  const toggleShowView = () => {
     setShowView(!showView);
   };
 
   const openPay = () => {
-    togglePayPopup()
-    toggleShowView()
-  }
+    togglePayPopup();
+    toggleShowView();
+  };
 
   return (
     <div className={styles.mainComponent}>
@@ -268,7 +266,7 @@ export default function RentalsPage() {
               ""
             )}
           </div>
-          <div className={styles.CardArea}>
+          <div className={styles.CardArea} style={{ overflow: showView == false ? "auto" : "hidden" }}>
             {data.map((d) => (
               <CardComponent
                 key={d.id}
@@ -286,51 +284,51 @@ export default function RentalsPage() {
                 CardArea={d.Area}
               />
             ))}
+            <PopupComponent
+              Top={0}
+              Left={0}
+              Right={0}
+              Bottom={0}
+              Width={350}
+              onClose={toggleShowView}
+              content={
+                <div className={styles.viewContainer}>
+                  <h3>To view the results, make a payment of</h3>
+                  <h1>ksh. 500</h1>
+                  <button className={styles.viewBtn} onClick={openPay}>
+                    Pay to view
+                  </button>
+                </div>
+              }
+              isOpen={showView}
+            />
+            <PopupComponent
+              Top={0}
+              Left={0}
+              Right={0}
+              Bottom={0}
+              Width={300}
+              onClose={togglePayPopup}
+              content={
+                <div className={styles.viewResult}>
+                  <h1>Pay to view</h1>
+                  {PayCardData.map((d) => (
+                    <PayCard
+                      key={d.id}
+                      PayPrice={d.price}
+                      SenderImage={d.Sender}
+                      RecieverImage={d.Reciever}
+                      SenderAccount={d.SenderAccount}
+                      RecieverAccount={d.RecieverAccount}
+                    />
+                  ))}
+                </div>
+              }
+              isOpen={payPopup}
+            />
           </div>
         </div>
       </div>
-      <PopupComponent
-        Top={0}
-        Left={0}
-        Right={0}
-        Bottom={0}
-        Width={350}
-        onClose={toggleShowView}
-        content={
-          <div className={styles.viewContainer}>
-            <h3>To view the results, make a payment of</h3>
-            <h1>ksh. 500</h1>
-            <button className={styles.viewBtn} onClick={openPay}>
-              Pay to view
-            </button>
-          </div>
-        }
-        isOpen={showView}
-      />
-     <PopupComponent
-          Top={0}
-          Left={0}
-          Right={0}
-          Bottom={0}
-          Width={300}
-          onClose={togglePayPopup}
-          content={
-            <div className={styles.viewResult}>
-              <h1>Pay to view</h1>
-              {PayCardData.map((d) => (
-                <PayCard
-                  key={d.id}
-                  PayPrice={d.price}
-                  SenderImage={d.Sender}
-                  RecieverImage={d.Reciever}
-                  SenderAccount={d.SenderAccount}
-                  RecieverAccount={d.RecieverAccount}
-                />
-              ))}
-            </div>
-          }
-          isOpen={payPopup}
-        />
     </div>
   );
 }

@@ -4,11 +4,11 @@
     left: 0;
     right: 0;
     bottom: 0;
+    height: 100%;
     z-index: 999;
     padding: 10px;
-    position: fixed;    
+    position: absolute; 
     backdrop-filter: blur(5px);
-
   }
 
   .popup {

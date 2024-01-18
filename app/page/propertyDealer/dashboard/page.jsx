@@ -1,6 +1,6 @@
 "use client";
 import NotificationImage from "@/public/assets/notificationImg.jpg";
-import AddAds from "@/app/page/propertyDealer/add/ads/AddAds";
+import AddAds from "@/app/page/propertyDealer/add/ads/page";
 import CleaningImage from "@/public/assets/cleaning.jpg";
 import ProfileImage from "@/public/assets/profile.png";
 import BannerImage from "@/public/assets/banner.png";
@@ -162,8 +162,8 @@ export default function DashboardPage() {
     router.push(`edit/property/${param}`);
   };
 
-  const addService = () => {
-    router.push("add/properties");
+  const addProperty = () => {
+    router.push("add/property");
   };
 
   useEffect(() => {
@@ -239,7 +239,7 @@ export default function DashboardPage() {
             <button className={styles.dashBtnRem} onClick={toggleAds}>
               {openAds ? "Hide" : "Show"} Post Ads
             </button>
-            <button className={styles.dashBtnRem} onClick={addService}>
+            <button className={styles.dashBtnRem} onClick={addProperty}>
               add Property
             </button>
             <div className={styles.dropdownWrapper}>

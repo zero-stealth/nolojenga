@@ -1,21 +1,20 @@
 "use client";
 
-import { useCallback } from 'react';
-import { useRouter } from 'next/navigation'
+import { useCallback } from "react";
+import { useRouter } from "next/navigation";
 import styles from "@/app/style/navigation.module.css";
-import { ChevronDoubleLeftIcon as BackIcon }from "@heroicons/react/24/outline";
+import { ChevronDoubleLeftIcon as BackIcon } from "@heroicons/react/24/outline";
 
 export default function NavBarComponent() {
-    const router = useRouter()
+  const router = useRouter();
 
-    
   const goBack = useCallback(() => {
     router.back();
   }, [router]);
 
   return (
     <div className={styles.navbtnComponent}>
-        <button className={styles.navBtn} onClick={goBack}>
+      <button className={styles.navBtn} onClick={goBack}>
         <BackIcon
           className={styles.NavBack}
           alt="back icon"

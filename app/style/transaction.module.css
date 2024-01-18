@@ -356,11 +356,6 @@
     font-size: 0.9rem;
   }
 
-  .transactionInfoContain {
-    max-height: 160px;
-    overflow: hidden;
-    overflow-y: auto;
-  }
 
   .cardWalletSection {
     gap: 0;

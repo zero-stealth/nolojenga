@@ -156,7 +156,7 @@ export default function EditAds({ params }) {
         disabled={isLoading}
         className={styles.formformButton}
       >
-        {isLoading ? <Loader /> : "Pay ksh 50 To Post"}
+        {isLoading ? <Loader /> : "Edit"}
       </button>
       <PopupComponent
         Top={0}

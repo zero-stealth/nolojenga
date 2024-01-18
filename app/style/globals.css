@@ -9,10 +9,11 @@
     --tertiary-color: #f32b1e;
     --background-color: #ffffff;
     --light-shade-color: #fafafa;
-    --secondary-dark-color: #0142aa;
+    --secondary-dark-color: #012764;
+    --secondary-light-color: #003180;
     --dark-background-color: #747477;
     --light-background-color: #bfc2c2;
-    --card-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    --card-shadow:rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
     --bar-shadow: rgba(2, 2, 3, 0.2) 0px 7px 29px 0px;
     --nav-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     --card-shadow-line: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
@@ -28,7 +29,7 @@
     --side-bar-width: 16%;
     --mobile-nav-height: 12%;
     --mobile-filter-width: 70%;
-    --dashboard-filter-width: 25%;
+    --dashboard-filter-width: 30%;
     --side-drawer-mobile-width: 60%;
   }
 
@@ -73,57 +74,59 @@
   select {
     outline: none;
   }
+}
 
-  .layoutHr {
-    width: 100%;
-    height: 1px;
-    display: flex;
-    background-color: var(--dark-background-color);
-  }
 
-  .dropdownIcon {
-    color: var(--light-background-color);
-  }
 
-  .dotContainer {
-    gap: 5px;
-    padding: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.layoutHr {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  background-color: var(--dark-background-color);
+}
 
-  .dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 360%;
-    background-color: var(--light-background-color);
-  }
+.dropdownIcon {
+  color: var(--light-background-color);
+}
 
-  .loader {
-    width: 48px;
-    height: 48px;
-    background: #fff;
-    display: inline-block;
-    border-radius: 50%;
-    box-sizing: border-box;
-    animation: animloader 1s ease-in infinite;
-  }
+.dotContainer {
+  gap: 5px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  @keyframes animloader {
-    0% {
-      transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 0;
-    }
-  }
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 360%;
+  background-color: var(--light-background-color);
+}
 
-  .mobileIcon {
-    fill: var(--secondary-color);
+.loader {
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: animloader 1s ease-in infinite;
+}
+
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
   }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.mobileIcon {
+  fill: var(--secondary-color);
 }
 
 * {

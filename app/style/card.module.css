@@ -7,7 +7,7 @@
     height: fit-content;  
     border-radius: 20px;
     flex-direction: column;
-    box-shadow: var(--card-shadow-line);
+    box-shadow: var(--card-shadow);
     background-color: var(--background-color);
   }
 

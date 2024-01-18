@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 import Loader from "@/app/components/Loader";
 import CardImg from "@/public/assets/card.png";
 import styles from "@/app/style/pay.module.css";
@@ -24,6 +25,7 @@ export default function PayCard({
   const [isLoading, setIsLoading] = useState(false);
   const [apiLink, setApiLink] = useState("api/link");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const router = useRouter();
 
   const toggleSucessful = () => {
     setSucessful(!isSucessful);
@@ -45,7 +47,7 @@ export default function PayCard({
   const onSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-  
+
     try {
       switch (currentImageIndex) {
         case 0:
@@ -67,17 +69,18 @@ export default function PayCard({
       });
 
       const data = await response.json();
-     setisPaid(true);
-    toast.success(`paid succesfuly`);
-  } catch (error) {
-    console.error(error);
-  } finally {
-    setIsLoading(false);
-    openSucess(); 
-    toast.error(`payment unsuccesfuly`);
-
-  }
-};
+      setisPaid(true);
+      toast.success(`paid succesfuly`);
+      router.push("/page/payment");
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setIsLoading(false);
+      openSucess();
+      toast.error(`payment unsuccesfuly`);
+      router.push("/page/payment");
+    }
+  };
 
   return (
     <form onSubmit={onSubmit} className={styles.payComponent}>
@@ -145,7 +148,7 @@ export default function PayCard({
         Bottom={0}
         Width={250}
         onClose={toggleSucessful}
-        content={<StatusCard Status={isPaid}/>}
+        content={<StatusCard Status={isPaid} />}
         isOpen={isSucessful}
       />
     </form>

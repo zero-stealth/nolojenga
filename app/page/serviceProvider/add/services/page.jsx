@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import toast from "react-hot-toast";
-import { useState, useRef } from "react";
+import { useState, useRef , useEffect} from "react";
 import { useRouter } from "next/navigation"; 
 import Loader from "@/app/components/Loader";
 import NavBar from "@/app/components/NavBar";
@@ -59,11 +59,51 @@ const FileInput = ({ onChange, idImage }) => {
   );
 };
 
+const GoogleMap = ({ onSelectLocation }) => {
+  const [map, setMap] = useState(null);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places`;
+    script.defer = true;
+    script.async = true;
+    script.onload = () => initMap();
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []); 
+
+  const initMap = () => {
+    const mapInstance = new window.google.maps.Map(
+      document.getElementById("map"),
+      {
+        center: { lat: 0, lng: 0 },
+        zoom: 8,
+      }
+    );
+
+    setMap(mapInstance);
+
+    mapInstance.addListener("click", (event) => {
+      const { latLng } = event;
+      const latitude = latLng.lat();
+      const longitude = latLng.lng();
+
+      onSelectLocation({ latitude, longitude });
+    });
+  };
+
+  return <div id="map" className={styles.mapRental}></div>;
+};
+
 export default function AddServices() {
   const [imageUrls, setImageUrls] = useState([null, null, null, null, null]);
   const [payPopup, setPayPopup] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [selected, setSelected] = useState([]);
+  const [selectedLocation, setSelectedLocation] = useState(null);
 
   const router = useRouter();
 
@@ -101,6 +141,11 @@ export default function AddServices() {
       newImageUrls[index] = imageUrl;
       setImageUrls(newImageUrls);
     }
+  };
+
+  const onSelectLocation = ({ latitude, longitude }) => {
+    setSelectedLocation({ latitude, longitude });
+    toast.success(`Selected Location: ${latitude}, ${longitude}`);
   };
 
   return (
@@ -165,6 +210,13 @@ export default function AddServices() {
                   placeholder="15000"
                 />
               </div>
+              {selectedLocation && (
+            <div>
+              Selected Location: {selectedLocation.latitude},{" "}
+              {selectedLocation.longitude}
+            </div>
+          )}
+          <GoogleMap onSelectLocation={onSelectLocation} />
             </div>
           </div>
           <div className={styles.ContainSideTwo}>

@@ -1,6 +1,6 @@
 "use client";
 import NotificationImage from "@/public/assets/notificationImg.jpg";
-import AddAds from "@/app/page/serviceProvider/add/ads/AddAds";
+import AddAds from "@/app/page/serviceProvider/add/ads/page";
 import CleaningImage from "@/public/assets/cleaning.jpg";
 import ProfileImage from "@/public/assets/profile.png";
 import BannerImage from "@/public/assets/banner.png";

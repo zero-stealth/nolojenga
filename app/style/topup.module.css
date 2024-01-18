@@ -1,0 +1,108 @@
+@media screen {
+  .topupContainer {
+    gap: 10px;
+    padding: 4px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topupHeader {
+    display: flex;
+    padding: 10px;
+    border-radius: 4px;
+    justify-content: space-between;
+    background-color: var(--secondary-dark-color);
+  }
+
+  .topupHeader h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--light-background-color);
+  }
+
+  .topupBack {
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topupBack:hover {
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+
+  .topupForm {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topupForm label {
+    font-size: 0.8rem;
+    color: var(--light-background-color);
+  }
+
+  .topupInput {
+    padding: 10px;
+    outline: none;
+    border-radius: 6px;
+    color: var(--light-shade-color);
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-dark-color);
+  }
+
+  .topupInput:hover {
+    font-size: .8rem;
+    border: 1px solid var(--high-color);
+  }
+
+  .topupInput::placeholder {
+    color: var(--light-background-color);
+  }
+
+  .topupPayment {
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topupPaymentCard {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    min-width: 200px;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: center;
+    border: 1px solid var(--secondary-dark-color);
+  }
+
+  .topupPaymentCard:hover {
+    border: 1px solid var(--high-color);
+  }
+
+  .formButton {
+    height: 40px;
+    cursor: pointer;
+    border-radius: 6px;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .topupContainer {
+    padding: 10px;
+  }
+}
