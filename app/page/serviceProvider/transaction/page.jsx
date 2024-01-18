@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import NavBar from "@/app/components/NavBar";
 import CryptoImg from "@/public/assets/crypto.png";
 import { useRef, useEffect, useState } from "react";
@@ -73,6 +74,7 @@ const TransactionData = [
 ];
 
 export default function TransactionPage() {
+  const router = useRouter();
   const [showPage, setShowPage] = useState("Expenses");
   const [personalKey, setPersonalKey] = useState("45679876k54");
 
@@ -97,6 +99,10 @@ export default function TransactionPage() {
 
   const CardData = showPage === "Expenses" ? ExpensesData : IncomeData;
 
+  const pay = () => {
+    router.push("/page/payment");
+    
+  }
 
   return (
     <div className={styles.transactionComponent}>
@@ -193,7 +199,7 @@ export default function TransactionPage() {
                   </div>
                 </div>
                 <div className={styles.cardInnerWalletBtn}>
-                  <button  className={`${styles.InnerWalletBtn} ${ styles.InnerWalletBtnTop}`}>
+                  <button onClick={pay}  className={`${styles.InnerWalletBtn} ${ styles.InnerWalletBtnTop}`}>
                     <SendIcon
                       className={styles.InnerWalletIcon}
                       alt="deposit icon"
@@ -203,7 +209,7 @@ export default function TransactionPage() {
                     <span>Deposit</span>
                   </button>
                  
-                  <button  className={`${styles.InnerWalletBtn} ${ styles.InnerWalletBtnMiddle}`}>
+                  <button onClick={pay}  className={`${styles.InnerWalletBtn} ${ styles.InnerWalletBtnMiddle}`}>
                     <DepositIcon
                       className={styles.InnerWalletIcon}
                       alt="deposit icon"
@@ -212,7 +218,7 @@ export default function TransactionPage() {
                     />
                     <span>Send</span>
                   </button>
-                  <button className={styles.InnerWalletBtn}>
+                  <button onClick={pay}  className={styles.InnerWalletBtn}>
                     <WithdrawIcon
                       className={styles.InnerWalletIcon}
                       alt="deposit icon"
